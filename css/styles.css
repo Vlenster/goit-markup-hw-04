@@ -38,7 +38,7 @@ body {
   margin: 0 auto;
   outline: 2px solid red
 }
-
+/* HEADER */
 .header {
   background-color: #ffffff;
   padding-top: 24px;
@@ -133,6 +133,7 @@ body {
   vertical-align: middle
   
 }
+/* HERO */
 .hero {
   background-color: #2f303a;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
@@ -179,6 +180,7 @@ padding-top: 200px;
   font-size: 16px;
   line-height: 30px;
 }
+/* ABOUT */
 .about {
   padding-top: 94px;
 }
@@ -193,24 +195,20 @@ padding-top: 200px;
   margin-left: 30px;
   max-width: 270px;
 }
-.about-list-item::before{
-  content:'' ;
+.about-icon-box{
   height: 120px;
   display: block;
   background-color: #F5F4FA;
   border-radius: 4px;
   background-repeat: no-repeat;
   background-position: center;
- margin-bottom: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.about-list-item.icon-antena::before{
-background-image: url(../images/about-icon/antenna\ 1.svg);}
-.about-list-item.icon-clock::before {
-  background-image: url(../images/about-icon/clock\ 1.svg);}
-.about-list-item.icon-diagram::before {
-  background-image: url(../images/about-icon/diagram\ 1.svg);}
-.about-list-item.icon-astro::before {
-background-image: url(../images/about-icon/astronaut\ 1.svg);}
+
+
 
 .about-title {
   font-size: 14px;
@@ -232,7 +230,7 @@ background-image: url(../images/about-icon/astronaut\ 1.svg);}
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
+/* PRODUCT */
 .product-title {
   font-size: 36px;
   line-height: 1.16;
@@ -251,6 +249,7 @@ background-image: url(../images/about-icon/astronaut\ 1.svg);}
 .product-item + .product-item {
   margin-left: 30px;
 }
+/* TEAM */
 .team {
   background-color: #F5F4FA;
   padding-bottom: 94px;
@@ -277,6 +276,9 @@ background-image: url(../images/about-icon/astronaut\ 1.svg);}
   margin-left: 30px;
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+  0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .team-name {
   font-family: 'Roboto';
@@ -327,6 +329,7 @@ padding-bottom: 30px;
   margin-left: 10px;
 }
 
+/* customers */
 .customers{
 padding-top: 94px;
 padding-bottom: 94px;
@@ -368,6 +371,7 @@ display: flex;
 width: 106px;
 height: 60px;
 }
+/* footer */
 .footer {
   background-color: #2f303a;
   padding-top: 60px;
@@ -473,6 +477,7 @@ height: 60px;
 .footer-soc-link:hover,
 .footer-soc-link:focus {
   background-color: #2196F3;}
+  /* PROJECT */
 .project{
   padding-bottom: 94px;
   padding-top: 94px;
@@ -483,13 +488,18 @@ height: 60px;
   margin-bottom: 50px;
   }
 .project-menu-item{
+  display: block;
   margin-left: 8px;
 }
+
 
 .btn-project:hover,
 .btn-project:focus {
 background-color: #2196f3;
 color: #ffffff;
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+0px 1px 2px rgba(0, 0, 0, 0.08),
+0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .btn-project {
@@ -536,4 +546,13 @@ color: #ffffff;
   border-bottom: 1px solid #EEEEEE;
   border-right: 1px solid #EEEEEE;
   padding: 20px 24px 20px 24px;
+  }
+
+  .project-link{
+    display: block;
+  }
+  .project-link:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+  0px 4px 4px rgba(0, 0, 0, 0.06),
+  1px 4px 6px rgba(0, 0, 0, 0.16);
   }
